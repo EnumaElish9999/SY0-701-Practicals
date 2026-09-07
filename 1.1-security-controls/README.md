@@ -92,7 +92,7 @@ added an inbound rule blocking ICMP Echo Request from Kali.
 
 - Blocked access to it with a firewall rule instead of fixing the underlying issue
 
-![BlockedPort](blockedport.png)
+![BlockedPort](block445.png)
 
 - Service Blocked
 

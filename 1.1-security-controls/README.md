@@ -72,23 +72,31 @@ added an inbound rule blocking ICMP Echo Request from Kali.
 
 ![Eventviewer](general.png)
 
-### 4. Corrective (Technical) – Snapshot restore
+### 4. Corrective (Technical) – restore point
 
 **Goal:** Show recovery after an incident.
 
-- With a clean snapshot already taken, break something on purpose (e.g. change the IP so Windows 10 loses network access)
-- Confirm it's broken
-- Restore the snapshot
-- Confirm it's fixed
-- **Capture:** before/after screenshots
+- Created a restore point using the System Restore setting
+- Changed settings in the Registry Editor to remove Microsoft Edge
+- Restored the system before the removal of Microsoft Edge
+
+![RestorePoint](restorepoint.png)
 
 ### 5. Compensating (Technical) – Temporary block
 
 **Goal:** Show a stand-in control for something that can't be patched right away.
 
-- Pick a service to treat as "unpatched" (e.g. SMB, port 445)
-- Block access to it with a firewall rule instead of fixing the underlying issue
-- **Capture:** the rule, plus a short note on why this is compensating and not preventive
+- Picked port 445 to treat as "unpatched"
+
+![port445open](portopen.png)
+
+- Blocked access to it with a firewall rule instead of fixing the underlying issue
+
+![BlockedPort](blockedport.png)
+
+- Service Blocked
+
+![FilteredPort](portfilitered.png)
 
 ### 6. Directive (Managerial) – Short policy note
 

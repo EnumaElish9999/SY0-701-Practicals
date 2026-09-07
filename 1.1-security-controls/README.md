@@ -5,7 +5,7 @@
 
 ## What This Covers
 
-A security control can be described two ways:
+A security control can be described in two ways:
 - **Category** – what enforces it
 - **Type** – when or how it acts
 
@@ -59,7 +59,7 @@ added an inbound rule blocking ICMP Echo Request from Kali.
 
 ### 2. Deterrent (Physical) – Warning label
 
-**Goal:** Show a physical example that discourages rather than blocks.
+**Goal:** Show a physical example that discourages, rather than blocks, access.
 
 - Make a short label for the lab setup, e.g. "Private lab – do not power off"
 
@@ -103,13 +103,12 @@ added an inbound rule blocking ICMP Echo Request from Kali.
 **Goal:** Write an actual policy-based control, not a technical one.
 
 - Write a half-page note on handling sensitive data — e.g. where files should be stored, what shouldn't go on personal USB drives
-- Save it in this folder as `data-handling-note.md`
-- **Capture:** the file itself
-
-## Results
-
-_Fill in after each exercise: what you did, what you saw, any issues you hit._
 
 ## Key Takeaways
 
-_Fill in after finishing: 2–3 sentences on what this taught you._
+- Preventive (firewall rule) — the event literally can't happen. Kali is blocked outright, no choice involved.
+- Deterrent (warning label) — nothing is actually stopped. Someone could ignore the label completely. It only discourages.
+- Detective (audit logging) — the failed logon still happened. You just find out about it afterward, in the log.
+- Corrective (snapshot restore) — the break still happened too. The value is how cleanly and quickly you reverse it, not preventing it in the first place.
+- Compensating (temporary block) — the weakness itself is still there. You've lowered the risk, not fixed anything.
+- Directive (policy note) — nothing enforces it technically. If nobody reads the note, nothing stops them. It's the weakest type, which is why directive controls are usually managerial rather than technical.

@@ -46,7 +46,7 @@ One task per control type — six in total, mixing technical, physical, and mana
 
 #### Ping Windows
 
-![PingKali](pingkali.png)
+![PingWindows](pingwindows.png)
 
 Opened Windows Defender Firewall with Advanced Security on Windows 10 and
 added an inbound rule blocking ICMP Echo Request from Kali.

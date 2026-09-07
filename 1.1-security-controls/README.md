@@ -48,7 +48,7 @@ One task per control type — six in total, mixing technical, physical, and mana
 
 ![PingWindows](pingwindows.png)
 
-Opened Windows Defender Firewall with Advanced Security on Windows 10 and
+- Opened Windows Defender Firewall with Advanced Security on Windows 10 and
 added an inbound rule blocking ICMP Echo Request from Kali.
 
 ![blockkali](blockkali.png)
@@ -62,17 +62,15 @@ added an inbound rule blocking ICMP Echo Request from Kali.
 **Goal:** Show a physical example that discourages rather than blocks.
 
 - Make a short label for the lab setup, e.g. "Private lab – do not power off"
-- Photograph it next to the equipment
-- **Capture:** the photo, plus one line on why this deters rather than prevents
 
 ### 3. Detective (Technical) – Audit logging
 
 **Goal:** Detect an event after it happens.
 
-- On Windows 10, enable logon auditing via Local Security Policy (`secpol.msc` → Local Policies → Audit Policy)
-- Trigger a failed logon on purpose
-- Find the matching entry in Event Viewer
-- **Capture:** a screenshot of the Event Viewer entry, with the Event ID noted
+- Enabled logon auditing via Local Security Policy (`secpol.msc` → Local Policies → Audit Policy). 
+- Triggered a failed logon on purpose
+
+![Eventviewer](general.png)
 
 ### 4. Corrective (Technical) – Snapshot restore
 

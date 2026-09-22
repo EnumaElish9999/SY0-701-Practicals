@@ -1,0 +1,19 @@
+# 1.2 – The CIA Triad
+
+**CompTIA Security+ SY0-701 – Exam Objective 1.2**
+**Source video:** Professor Messer – The CIA Triad
+
+## What This Covers
+
+Three properties every security control is ultimately protecting:
+
+| Property | What it means |
+|---|---|
+| Confidentiality | Keeping information away from anyone who shouldn't see it |
+| Integrity | Making sure data hasn't been changed, by accident or on purpose |
+| Availability | Making sure systems and data stay accessible when needed |
+
+Common ways each one gets achieved:
+- **Confidentiality** – encryption, access controls, extra authentication factors
+- **Integrity** – hashing, digital signatures, certificates
+- **Availability** – redundancy/fault tolerance, patching, monitoring
